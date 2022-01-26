@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# course-directory
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+    The course-directory app was bootstraped using create-react-app. This react application is a single web application that uses react-router-dom to match the url with the correct route. It displays some basic information about the Treehouse front end course.
 
-## Available Scripts
+## Example
 
-In the project directory, you can run:
+![Example](src/img/ss1.png)
+![Example](src/img/ss2.png)
+![Example](src/img/ss3.png)
+![Example](src/img/ss4.png)
+![Example](src/img/ss5.png)
+![Example](src/img/ss6.png)
+![Example](src/img/ss7.png)
 
-### `npm start`
+## index.js
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    Main entry point of the application. Renders App.js component to the root div.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Components
 
-### `npm test`
+### App.js
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    Contains the main routes of the application, directing the app based on the url path using react-router-dom version 6.
 
-### `npm run build`
+### Header.js
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    Contains the Navigation links in the header of the application using NavLink to link to different routes of the app.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Home.js
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    The main homepage of the app displaying information about the front end web dev and a form for featured teachers. On submit of the form the app routes to a path using the name and topic as params sending them to the Featured.js page.
 
-### `npm run eject`
+### Featured.js
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    Uses react-router-dom hook useParams() to get the topic and name of the teacher from the url and displaying custom info based on the params passed to it.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### About.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+    The about page takes in a title prop and displays it to the page with some basic info about the course directory.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Teachers.js
 
-## Learn More
+    The Teachers.js component gets data from the data folder and displays information about each teacher.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Courses.js
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    Imports data from the the data folder and has NavLinks to the HTML, CSS, and JavaScript courses. Depending on which subject is selected the course info is then sent to the CourseContainer component passing the course data down as a prop.
 
-### Code Splitting
+### courses
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+#### CourseContainer.js
 
-### Analyzing the Bundle Size
+    Takes course data as a prop from the Courses.js component and passes each section of data into the Course.js component.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+#### Course.js
 
-### Making a Progressive Web App
+    The Course.js takes the data from the CourseContainer.js component and renders the info to the page.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+### NotFound.js
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    Displays a Page Not Found message and error icon to the page
