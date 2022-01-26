@@ -2,6 +2,25 @@
 
     The course-directory app was bootstraped using create-react-app. This react application is a single web application that uses react-router-dom to match the url with the correct route. It displays some basic information about the Treehouse front end course.
 
+## Table of Contents
+
+- [course-directory](#course-directory)
+  - [Table of Contents](#table-of-contents)
+  - [Example](#example)
+  - [index.js](#indexjs)
+  - [Components](#components)
+    - [App.js](#appjs)
+    - [Header.js](#headerjs)
+    - [Home.js](#homejs)
+    - [Featured.js](#featuredjs)
+    - [About.js](#aboutjs)
+    - [Teachers.js](#teachersjs)
+    - [Courses.js](#coursesjs)
+    - [courses](#courses)
+      - [CourseContainer.js](#coursecontainerjs)
+      - [Course.js](#coursejs)
+    - [NotFound.js](#notfoundjs)
+
 ## Example
 
 ![Example](src/img/ss1.png)
@@ -59,22 +78,3 @@
 ### NotFound.js
 
     Displays a Page Not Found message and error icon to the page
-
-## Table of Contents
-
-- [course-directory](#course-directory)
-  - [Example](#example)
-  - [index.js](#indexjs)
-  - [Components](#components)
-    - [App.js](#appjs)
-    - [Header.js](#headerjs)
-    - [Home.js](#homejs)
-    - [Featured.js](#featuredjs)
-    - [About.js](#aboutjs)
-    - [Teachers.js](#teachersjs)
-    - [Courses.js](#coursesjs)
-    - [courses](#courses)
-      - [CourseContainer.js](#coursecontainerjs)
-      - [Course.js](#coursejs)
-    - [NotFound.js](#notfoundjs)
-  - [Table of Contents](#table-of-contents)
