@@ -59,3 +59,22 @@
 ### NotFound.js
 
     Displays a Page Not Found message and error icon to the page
+
+## Table of Contents
+
+- [course-directory](#course-directory)
+  - [Example](#example)
+  - [index.js](#indexjs)
+  - [Components](#components)
+    - [App.js](#appjs)
+    - [Header.js](#headerjs)
+    - [Home.js](#homejs)
+    - [Featured.js](#featuredjs)
+    - [About.js](#aboutjs)
+    - [Teachers.js](#teachersjs)
+    - [Courses.js](#coursesjs)
+    - [courses](#courses)
+      - [CourseContainer.js](#coursecontainerjs)
+      - [Course.js](#coursejs)
+    - [NotFound.js](#notfoundjs)
+  - [Table of Contents](#table-of-contents)
